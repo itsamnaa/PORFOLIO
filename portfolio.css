@@ -5,6 +5,11 @@
   font-family: sans-serif;
   text-decoration: none;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .header {
   background-color: black;
   top: 0;
@@ -243,4 +248,23 @@ footer .copyright {
   text-align: center;
   font-size: 12px;
   color: aliceblue;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card, .section {
+    width: 100%;
+  }
 }
